@@ -12,7 +12,7 @@ cgpa = st.sidebar.slider("CGPA Score", 0, 10, 4)
 age = st.sidebar.slider("Age", 18, 60, 20)
 interview_score = st.sidebar.slider("Interview Score", 0, 100, 50)
 ds = pd.read_csv(
-    'C:/Users/milan/Documents/AI-ML LNB/ML/20 july 2023/salary_predict_dataset.csv')
+    'salary_predict_dataset.csv')
 print(ds)
 x = ds.iloc[:, :4]
 y = ds.iloc[:, 4:]
